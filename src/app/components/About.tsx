@@ -6,7 +6,7 @@ const About = () => {
     return (
         <section
             id="about"
-            className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-900 px-6 py-20"
+            className="min-h-screen flex flex-col items-center justify-center bg-indigo-50 text-gray-900 px-6 py-20"
         >
             <div className="max-w-4xl text-center">
                 {/* Encabezado */}

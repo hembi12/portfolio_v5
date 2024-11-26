@@ -37,16 +37,16 @@ const Navbar = () => {
 
     // Declaración explícita del tipo para las claves
     const icons: { [key: string]: JSX.Element } = {
-        home: <FaHome className="text-indigo-400 text-lg mr-2" />,
-        about: <FaUserAlt className="text-indigo-400 text-lg mr-2" />,
-        skills: <FaTools className="text-indigo-400 text-lg mr-2" />,
-        projects: <FaProjectDiagram className="text-indigo-400 text-lg mr-2" />,
-        resume: <FaFileAlt className="text-indigo-400 text-lg mr-2" />,
-        contact: <FaEnvelope className="text-indigo-400 text-lg mr-2" />,
+        home: <FaHome className="text-white text-lg mr-2" />,
+        about: <FaUserAlt className="text-white text-lg mr-2" />,
+        skills: <FaTools className="text-white text-lg mr-2" />,
+        projects: <FaProjectDiagram className="text-white text-lg mr-2" />,
+        resume: <FaFileAlt className="text-white text-lg mr-2" />,
+        contact: <FaEnvelope className="text-white text-lg mr-2" />,
     };
 
     return (
-        <nav className="bg-indigo-950 text-white p-4 fixed w-full z-20">
+        <nav className="bg-indigo-950 text-white p-4 shadow-lg fixed w-full z-20">
             <div className="container mx-auto flex justify-between items-center">
                 {/* Sección izquierda: Iniciales */}
                 <div className="text-xl font-bold">HM</div>

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 import { FaChevronDown } from "react-icons/fa";
+import Link from "next/link";
 
 const Home = () => {
     const typedElement = useRef(null);
@@ -29,7 +30,7 @@ const Home = () => {
     return (
         <section
             id="home"
-            className="h-screen flex flex-col items-center justify-center bg-indigo-100 text-white text-center px-6"
+            className="h-screen flex flex-col items-center justify-center bg-indigo-100 text-white text-center px-6 relative"
         >
             {/* Nombre */}
             <h1 className="text-5xl sm:text-7xl lg:text-7xl font-bold text-indigo-900 mb-4">
@@ -50,14 +51,16 @@ const Home = () => {
                 </a>
                 <a
                     href="#contact"
-                    className="px-6 py-3 border-2 border-indigo-700 font-bold text-indigo-700 hover:bg-indigo-500 shadow-lg hover:border-indigo-400 hover:text-white hover:shadow-2xl  transition-all duration-200 rounded-full"
+                    className="px-6 py-3 border-2 border-indigo-700 font-bold text-indigo-700 hover:bg-indigo-500 shadow-lg hover:border-indigo-400 hover:text-white hover:shadow-2xl transition-all duration-200 rounded-full"
                 >
                     Contact Me
                 </a>
             </div>
             {/* Icono Chevron */}
             <div className="absolute bottom-10">
-                <FaChevronDown className="text-indigo-700 animate-bounce text-3xl hover:text-indigo-500" />
+                <Link href="#about">
+                    <FaChevronDown className="text-indigo-700 animate-bounce text-3xl hover:text-indigo-500 cursor-pointer" />
+                </Link>
             </div>
         </section>
     );
