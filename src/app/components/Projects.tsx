@@ -54,12 +54,12 @@ const Projects = () => {
             id="projects"
             className="min-h-screen flex flex-col items-center justify-center bg-indigo-50 text-gray-900 px-6 py-20"
         >
-            <div className="max-w-6xl text-center">
+            <div className="max-w-4xl text-center">
                 {/* Título */}
                 <h2 className="text-4xl font-bold text-indigo-900 mb-6">My Projects</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Here are some of the projects I've worked on, showcasing my skills in frontend, backend, and full-stack development.
+                    Here are some of the projects I’ve worked on, showcasing my skills in frontend, backend, and full-stack development.
                 </p>
                 {/* Proyectos */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

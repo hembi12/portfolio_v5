@@ -1,0 +1,24 @@
+{
+    "home": {
+        "title": "Welcome to My Portfolio"
+    },
+    "about": {
+        "title": "About Me",
+        "description": "Learn more about my journey as a developer."
+    },
+    "skills": {
+        "title": "My Skills"
+    },
+    "projects": {
+        "title": "My Projects"
+    },
+    "resume": {
+        "title": "My Resume"
+    },
+    "contact": {
+        "title": "Contact Me"
+    },
+    "footer": {
+        "text": "© 2024 Héctor Martil - All rights reserved."
+    }
+}

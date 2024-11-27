@@ -13,7 +13,7 @@ const About = () => {
                 <h2 className="text-4xl font-bold text-indigo-900 mb-6">About Me</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    I'm a dedicated and passionate Mexican web developer focused on creating efficient, user-centered applications. My expertise spans both frontend and backend development, allowing me to build full-stack solutions that are visually appealing and functionally robust.
+                    I’m a dedicated and passionate Mexican web developer focused on creating efficient, user-centered applications. My expertise spans both frontend and backend development, allowing me to build full-stack solutions that are visually appealing and functionally robust.
                 </p>
                 {/* Core Values */}
                 <h3 className="text-3xl font-semibold text-indigo-800 mb-4">Core Values</h3>

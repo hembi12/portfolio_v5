@@ -37,7 +37,7 @@ const Skills = () => {
                 <h2 className="text-4xl font-bold text-indigo-900 mb-6">My Skills</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Here are the technologies and tools I use to build efficient and scalable web applications, as well as those I've worked with in the past.
+                    Here are the technologies and tools I use to build efficient and scalable web applications, as well as those I’ve worked with in the past.
                 </p>
                 {/* Currently Using */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center mb-8">
