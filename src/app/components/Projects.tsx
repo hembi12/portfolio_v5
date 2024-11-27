@@ -59,7 +59,7 @@ const Projects = ({ title }: { title: string }) => {
                 <h2 className="text-4xl font-bold text-indigo-900 mb-6">{title}</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Explore some of the projects I've worked on, showcasing my skills and expertise.
+                    Explore some of the projects I’ve worked on, showcasing my skills and expertise.
                 </p>
                 {/* Proyectos */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
