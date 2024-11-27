@@ -1,6 +1,6 @@
 "use client";
 
-const Contact = () => {
+const Contact = ({ title }: { title: string }) => {
     return (
         <section
             id="contact"
@@ -8,10 +8,10 @@ const Contact = () => {
         >
             <div className="max-w-4xl text-center">
                 {/* Título */}
-                <h2 className="text-4xl font-bold text-indigo-900 mb-6">Contact Me</h2>
+                <h2 className="text-4xl font-bold text-indigo-900 mb-6">{title}</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    I’d love to hear from you! Whether you have a question, want to discuss a project, or just want to say hi, feel free to reach out using the form below.
+                    Feel free to reach out to me for any inquiries, collaborations, or opportunities.
                 </p>
             </div>
 
@@ -27,7 +27,7 @@ const Contact = () => {
                             type="text"
                             id="name"
                             className="w-full px-4 py-2 border border-indigo-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                            placeholder="John Doe"
+                            placeholder="Enter your full name"
                             required
                         />
                     </div>
@@ -40,7 +40,7 @@ const Contact = () => {
                             type="email"
                             id="email"
                             className="w-full px-4 py-2 border border-indigo-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                            placeholder="example@example.com"
+                            placeholder="Enter your email address"
                             required
                         />
                     </div>
@@ -66,13 +66,13 @@ const Contact = () => {
                     {/* Mensaje */}
                     <div>
                         <label htmlFor="message" className="block text-sm font-bold text-indigo-800 mb-2">
-                            Your Message
+                            Message
                         </label>
                         <textarea
                             id="message"
                             rows={5}
                             className="w-full px-4 py-2 border border-indigo-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                            placeholder="Please provide details about your project or inquiry..."
+                            placeholder="Enter your message here..."
                             required
                         ></textarea>
                     </div>

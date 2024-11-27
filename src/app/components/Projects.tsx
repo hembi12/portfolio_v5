@@ -8,47 +8,47 @@ import { SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 const projects = [
     {
         title: "Portfolio Website",
-        description: "A modern portfolio website built with React, Tailwind CSS, and TypeScript.",
-        image: "/images/portfolio.png", // Cambiar por la ruta correcta
+        description: "A responsive portfolio website to showcase my skills and projects.",
+        image: "/images/portfolio.png",
         liveLink: "#",
         codeLink: "#",
         technologies: [
-            { icon: <FaReact />, key: "react", color: "#06b6d4" },
-            { icon: <FaHtml5 />, key: "html5", color: "#ea580c" },
-            { icon: <FaCss3Alt />, key: "css3", color: "#2563eb" },
-            { icon: <SiTailwindcss />, key: "tailwind", color: "#2dd4bf" },
-            { icon: <SiTypescript />, key: "typescript", color: "#2563eb" },
+            { icon: <FaReact />, key: "React", color: "#06b6d4" },
+            { icon: <FaHtml5 />, key: "HTML5", color: "#ea580c" },
+            { icon: <FaCss3Alt />, key: "CSS3", color: "#2563eb" },
+            { icon: <SiTailwindcss />, key: "TailwindCSS", color: "#2dd4bf" },
+            { icon: <SiTypescript />, key: "TypeScript", color: "#2563eb" },
         ],
     },
     {
-        title: "E-commerce Store",
-        description: "An e-commerce platform with a fully functional cart, built using MERN stack.",
-        image: "/images/ecommerce.png", // Cambiar por la ruta correcta
+        title: "E-commerce Platform",
+        description: "An e-commerce platform with dynamic product listing and cart functionality.",
+        image: "/images/ecommerce.png",
         liveLink: "#",
         codeLink: "#",
         technologies: [
-            { icon: <FaReact />, key: "react", color: "#06b6d4" },
-            { icon: <FaJs />, key: "javascript", color: "#eab308" },
-            { icon: <FaGitAlt />, key: "git", color: "#f97316" },
-            { icon: <FaHtml5 />, key: "html5", color: "#ea580c" },
+            { icon: <FaReact />, key: "React", color: "#06b6d4" },
+            { icon: <FaJs />, key: "JavaScript", color: "#eab308" },
+            { icon: <FaGitAlt />, key: "Git", color: "#f97316" },
+            { icon: <FaHtml5 />, key: "HTML5", color: "#ea580c" },
         ],
     },
     {
         title: "Landing Page",
-        description: "A responsive and visually appealing landing page built with Vite, React, and Tailwind CSS.",
-        image: "/images/landingpage.png", // Cambiar por la ruta correcta
+        description: "A clean and modern landing page designed with React and TailwindCSS.",
+        image: "/images/landingpage.png",
         liveLink: "#",
         codeLink: "#",
         technologies: [
-            { icon: <FaReact />, key: "react", color: "#06b6d4" },
-            { icon: <SiVite />, key: "vite", color: "#646cff" },
-            { icon: <SiTailwindcss />, key: "tailwind", color: "#2dd4bf" },
-            { icon: <FaHtml5 />, key: "html5", color: "#ea580c" },
+            { icon: <FaReact />, key: "React", color: "#06b6d4" },
+            { icon: <SiVite />, key: "Vite", color: "#646cff" },
+            { icon: <SiTailwindcss />, key: "TailwindCSS", color: "#2dd4bf" },
+            { icon: <FaHtml5 />, key: "HTML5", color: "#ea580c" },
         ],
     },
 ];
 
-const Projects = () => {
+const Projects = ({ title }: { title: string }) => {
     return (
         <section
             id="projects"
@@ -56,10 +56,10 @@ const Projects = () => {
         >
             <div className="max-w-4xl text-center">
                 {/* Título */}
-                <h2 className="text-4xl font-bold text-indigo-900 mb-6">My Projects</h2>
+                <h2 className="text-4xl font-bold text-indigo-900 mb-6">{title}</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Here are some of the projects I’ve worked on, showcasing my skills in frontend, backend, and full-stack development.
+                    Explore some of the projects I've worked on, showcasing my skills and expertise.
                 </p>
                 {/* Proyectos */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

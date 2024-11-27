@@ -3,7 +3,7 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDatabase } from "react-icons/fa";
 import { SiTypescript, SiTailwindcss, SiMongodb, SiExpress, SiGithub, SiVisualstudiocode, SiFirebase, SiMysql, SiNextdotjs, SiBootstrap } from "react-icons/si";
 
-const Skills = () => {
+const Skills = ({ title }: { title: string }) => {
     const currentlyUsing = [
         { icon: <SiNextdotjs />, color: "#000000" },
         { icon: <SiTypescript />, color: "#2563eb" },
@@ -34,10 +34,10 @@ const Skills = () => {
         >
             <div className="max-w-4xl text-center">
                 {/* Título */}
-                <h2 className="text-4xl font-bold text-indigo-900 mb-6">My Skills</h2>
+                <h2 className="text-4xl font-bold text-indigo-900 mb-6">{title}</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Here are the technologies and tools I use to build efficient and scalable web applications, as well as those I’ve worked with in the past.
+                    A showcase of the technologies I currently use and those I have worked with in the past.
                 </p>
                 {/* Currently Using */}
                 <div className="bg-white shadow-lg rounded-lg p-6 text-center mb-8">

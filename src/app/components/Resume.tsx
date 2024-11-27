@@ -1,6 +1,6 @@
 "use client";
 
-const Resume = () => {
+const Resume = ({ title }: { title: string }) => {
     return (
         <section
             id="resume"
@@ -8,10 +8,10 @@ const Resume = () => {
         >
             <div className="max-w-4xl text-center">
                 {/* Título */}
-                <h2 className="text-4xl font-bold text-indigo-900 mb-6">My Resume</h2>
+                <h2 className="text-4xl font-bold text-indigo-900 mb-6">{title}</h2>
                 {/* Descripción */}
                 <p className="text-lg leading-8 mb-8">
-                    Discover my professional journey, skills, and educational background by viewing or downloading my resume.
+                    Access my resume to learn more about my professional journey and expertise.
                 </p>
                 {/* Botones */}
                 <div className="flex flex-wrap justify-center gap-4">

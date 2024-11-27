@@ -5,7 +5,7 @@ import Typed from "typed.js";
 import { FaChevronDown } from "react-icons/fa";
 import Link from "next/link";
 
-const Home = () => {
+const Home = ({ text }: { text: string }) => {
     const typedElement = useRef(null);
 
     useEffect(() => {
@@ -20,6 +20,8 @@ const Home = () => {
             typeSpeed: 50,
             backSpeed: 30,
             loop: true,
+            showCursor: false,
+            smartBackspace: true,   // Elimina solo las palabras que son diferentes
         });
 
         return () => {
@@ -34,7 +36,7 @@ const Home = () => {
         >
             {/* Nombre */}
             <h1 className="text-5xl sm:text-7xl lg:text-7xl font-bold text-indigo-900 mb-4">
-                Héctor Martil
+                {text}
             </h1>
             {/* Animación de texto */}
             <span
